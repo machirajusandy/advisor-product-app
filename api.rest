@@ -1,0 +1,32 @@
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+  "name": "testuser1",
+  "password": "Testpassword4@",
+  "email": "testuser1@email.com"
+}
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "password": "Testpassword4@",
+  "email": "testuser1@email.com"
+}
+
+###
+POST http://localhost:3000/products
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MjBhMjhlZDQ2ZTYxNjdmMzE4NTQ4MSIsImVtYWlsIjoidGVzdHVzZXIxQGVtYWlsLmNvbSIsIm5hbWUiOiJ0ZXN0dXNlcjEiLCJpYXQiOjE3NDY5NjkyNTYsImV4cCI6MTc0Njk3Mjg1Nn0.EDuWy5IM7lmeBK-_-JL8YV5n48eYatfUHCFYuaa8lBw
+
+{
+  "name": "testproduct-3",
+  "description": "description testproduct-2",
+  "price": 1254
+}
+
+###
+GET http://localhost:3000/products
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MjBhMjhlZDQ2ZTYxNjdmMzE4NTQ4MSIsImVtYWlsIjoidGVzdHVzZXIxQGVtYWlsLmNvbSIsIm5hbWUiOiJ0ZXN0dXNlcjEiLCJpYXQiOjE3NDY5NjkyNTYsImV4cCI6MTc0Njk3Mjg1Nn0.EDuWy5IM7lmeBK-_-JL8YV5n48eYatfUHCFYuaa8lBw
