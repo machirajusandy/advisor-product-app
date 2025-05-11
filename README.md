@@ -55,7 +55,7 @@ A secure RESTful API that enables advisors to register, login, and manage their 
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/machirajusandy/advisor-product-app.git
    cd advisor-porduct-node-restful-api
    ```
 
